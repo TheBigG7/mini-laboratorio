@@ -1,0 +1,143 @@
+[
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "saludar",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_a",
+        "description": "Laboratorio 1.modulo_a",
+        "peekOfCode": "def saludar(nombre):\n    print(f\"Hola, {nombre}! Bienvenido al Centro de Comandos.\")\ndef despedir(nombre):\n    print(f\"Adiós, {nombre}! Gracias por usar el Centro de Comandos.\")\ndef aplaudir(nombre):\n    print(f\"{nombre} aplaude con entusiasmo. ¡Buen trabajo!\")\nacciones = {\n    \"saludar\": saludar,\n    \"despedir\": despedir,\n    \"aplaudir\": aplaudir",
+        "detail": "Laboratorio 1.modulo_a",
+        "documentation": {}
+    },
+    {
+        "label": "despedir",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_a",
+        "description": "Laboratorio 1.modulo_a",
+        "peekOfCode": "def despedir(nombre):\n    print(f\"Adiós, {nombre}! Gracias por usar el Centro de Comandos.\")\ndef aplaudir(nombre):\n    print(f\"{nombre} aplaude con entusiasmo. ¡Buen trabajo!\")\nacciones = {\n    \"saludar\": saludar,\n    \"despedir\": despedir,\n    \"aplaudir\": aplaudir\n}\n# No es necesario usar **kwargs en este caso, pero se incluye para demostrar   flexibilidad.",
+        "detail": "Laboratorio 1.modulo_a",
+        "documentation": {}
+    },
+    {
+        "label": "aplaudir",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_a",
+        "description": "Laboratorio 1.modulo_a",
+        "peekOfCode": "def aplaudir(nombre):\n    print(f\"{nombre} aplaude con entusiasmo. ¡Buen trabajo!\")\nacciones = {\n    \"saludar\": saludar,\n    \"despedir\": despedir,\n    \"aplaudir\": aplaudir\n}\n# No es necesario usar **kwargs en este caso, pero se incluye para demostrar   flexibilidad.\ndef ejecutar(accion, *args, **kwargs):\n    if accion in acciones:",
+        "detail": "Laboratorio 1.modulo_a",
+        "documentation": {}
+    },
+    {
+        "label": "ejecutar",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_a",
+        "description": "Laboratorio 1.modulo_a",
+        "peekOfCode": "def ejecutar(accion, *args, **kwargs):\n    if accion in acciones:\n        funcion = acciones[accion]\n        return funcion(*args, **kwargs)\n    else:\n        return \"Acción no reconocida.\"\nprint(ejecutar(\"saludar\", \"Ana\"))\nprint(ejecutar(\"despedir\", \"Luis\"))\nprint(ejecutar(\"aplaudir\", \"Carlos\"))\nprint(ejecutar(\"cantar\", \"Carlos\"))",
+        "detail": "Laboratorio 1.modulo_a",
+        "documentation": {}
+    },
+    {
+        "label": "acciones",
+        "kind": 5,
+        "importPath": "Laboratorio 1.modulo_a",
+        "description": "Laboratorio 1.modulo_a",
+        "peekOfCode": "acciones = {\n    \"saludar\": saludar,\n    \"despedir\": despedir,\n    \"aplaudir\": aplaudir\n}\n# No es necesario usar **kwargs en este caso, pero se incluye para demostrar   flexibilidad.\ndef ejecutar(accion, *args, **kwargs):\n    if accion in acciones:\n        funcion = acciones[accion]\n        return funcion(*args, **kwargs)",
+        "detail": "Laboratorio 1.modulo_a",
+        "documentation": {}
+    },
+    {
+        "label": "CantidadInvalida",
+        "kind": 6,
+        "importPath": "Laboratorio 1.modulo_b",
+        "description": "Laboratorio 1.modulo_b",
+        "peekOfCode": "class CantidadInvalida(Exception):\n    \"\"\"Excepción lanzada cuando la cantidad es inválida (<= 0)\"\"\"\n    def __init__(self, mensaje=\"La cantidad debe ser mayor que 0\"):\n        self.mensaje = mensaje\n        super().__init__(self.mensaje)\ndef calcular_total(precio_unitario: float, cantidad: int) -> float:\n    \"\"\"\n    Calcula el total de una compra.\n    Args:\n        precio_unitario: Precio de cada unidad",
+        "detail": "Laboratorio 1.modulo_b",
+        "documentation": {}
+    },
+    {
+        "label": "parsear_enteros",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_b",
+        "description": "Laboratorio 1.modulo_b",
+        "peekOfCode": "def parsear_enteros(entradas: list[str]) -> tuple[list[int], list[str]]:\n    \"\"\"\n    Convierte una lista de strings a enteros, capturando errores.\n    Args:\n        entradas: Lista de strings que se intentarán convertir\n    Returns:\n        Tupla con (valores_convertidos, lista_de_errores)\n    \"\"\"\n    valores = []\n    errores = []",
+        "detail": "Laboratorio 1.modulo_b",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_total",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_b",
+        "description": "Laboratorio 1.modulo_b",
+        "peekOfCode": "def calcular_total(precio_unitario: float, cantidad: int) -> float:\n    \"\"\"\n    Calcula el total de una compra.\n    Args:\n        precio_unitario: Precio de cada unidad\n        cantidad: Número de unidades\n    Returns:\n        float: Total de la compra\n    Raises:\n        CantidadInvalida: Si cantidad <= 0",
+        "detail": "Laboratorio 1.modulo_b",
+        "documentation": {}
+    },
+    {
+        "label": "procesar_compra",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_b",
+        "description": "Laboratorio 1.modulo_b",
+        "peekOfCode": "def procesar_compra(precio_unitario: float, cantidad: int) -> str:\n    \"\"\"\n    Procesa una compra y maneja las excepciones.\n    \"\"\"\n    try:\n        total = calcular_total(precio_unitario, cantidad)\n        return f\"Total calculado: ${total:.2f}\"\n    except CantidadInvalida as e:\n        return f\"Error de cantidad: {e}\"\n    except ValueError as e:",
+        "detail": "Laboratorio 1.modulo_b",
+        "documentation": {}
+    },
+    {
+        "label": "entradas1",
+        "kind": 5,
+        "importPath": "Laboratorio 1.modulo_b",
+        "description": "Laboratorio 1.modulo_b",
+        "peekOfCode": "entradas1 = [\"10\", \"x\", \"3\"]\nvalores, errores = parsear_enteros(entradas1)\nprint(\"B.1 – Validación de entrada\")\nprint(\"Entradas:\", entradas1)\nprint(\"Valores convertidos:\", valores)\nprint(\"Errores:\", errores)\nprint()\n# B.2 – Excepciones personalizadas y raise\n# Excepción personalizada\nclass CantidadInvalida(Exception):",
+        "detail": "Laboratorio 1.modulo_b",
+        "documentation": {}
+    },
+    {
+        "label": "requiere_positivos",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_c",
+        "description": "Laboratorio 1.modulo_c",
+        "peekOfCode": "def requiere_positivos(func: Callable) -> Callable: # Callable representa un objeto que puede ser llamado (como una función)\n    \"\"\"\n    Decorador que verifica que todos los argumentos numéricos sean > 0.\n    Si alguno no lo es, lanza ValueError.\n    \"\"\"\n    @wraps(func) # es un decorador que ayuda a preservar la metadata de la función original cuando se crea un decorador\n    def wrapper(*args, **kwargs):\n        # Combinar args y kwargs en un solo iterable de valores\n        valores = list(args) + list(kwargs.values())\n        # Verificar que todos los valores numéricos sean positivos",
+        "detail": "Laboratorio 1.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_descuento",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_c",
+        "description": "Laboratorio 1.modulo_c",
+        "peekOfCode": "def calcular_descuento(precio: float, porcentaje: float) -> float:\n    \"\"\"\n    Calcula el precio final después de aplicar un descuento.\n    Args:\n        precio: Precio original\n        porcentaje: Porcentaje de descuento (ej: 0.2 para 20%)\n    Returns:\n        Precio con descuento aplicado\n    \"\"\"\n    return precio * (1 - porcentaje)",
+        "detail": "Laboratorio 1.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "escala",
+        "kind": 2,
+        "importPath": "Laboratorio 1.modulo_c",
+        "description": "Laboratorio 1.modulo_c",
+        "peekOfCode": "def escala(valor: float, factor: float) -> float:\n    \"\"\"\n    Multiplica un valor por un factor de escala.\n    Args:\n        valor: Valor original\n        factor: Factor de escala (> 0)\n    Returns:\n        Valor escalado\n    \"\"\"\n    return valor * factor",
+        "detail": "Laboratorio 1.modulo_c",
+        "documentation": {}
+    }
+]
