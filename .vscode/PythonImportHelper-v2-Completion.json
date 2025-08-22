@@ -24,6 +24,63 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Utilidades_String",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "Utilidades_String",
+        "description": "Utilidades_String",
+        "detail": "Utilidades_String",
+        "documentation": {}
+    },
+    {
+        "label": "validar_email",
+        "importPath": "mi_paquete_mod_b.strings",
+        "description": "mi_paquete_mod_b.strings",
+        "isExtraImport": true,
+        "detail": "mi_paquete_mod_b.strings",
+        "documentation": {}
+    },
+    {
+        "label": "divicion_segura",
+        "importPath": "mi_paquete_mod_b",
+        "description": "mi_paquete_mod_b",
+        "isExtraImport": true,
+        "detail": "mi_paquete_mod_b",
+        "documentation": {}
+    },
+    {
+        "label": "numero_a_string",
+        "importPath": "mi_paquete_mod_b.numbers",
+        "description": "mi_paquete_mod_b.numbers",
+        "isExtraImport": true,
+        "detail": "mi_paquete_mod_b.numbers",
+        "documentation": {}
+    },
+    {
         "label": "saludar",
         "kind": 2,
         "importPath": "Laboratorio 1.modulo_a",
@@ -138,6 +195,105 @@
         "description": "Laboratorio 1.modulo_c",
         "peekOfCode": "def escala(valor: float, factor: float) -> float:\n    \"\"\"\n    Multiplica un valor por un factor de escala.\n    Args:\n        valor: Valor original\n        factor: Factor de escala (> 0)\n    Returns:\n        Valor escalado\n    \"\"\"\n    return valor * factor",
         "detail": "Laboratorio 1.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "divicion_segura",
+        "kind": 2,
+        "importPath": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "description": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "peekOfCode": "def divicion_segura(a: float, b: float) -> float:\n    \"\"\"Divide dos números de forma segura (maneja división por cero).\"\"\"\n    if b == 0:\n        raise ValueError(\"División por cero no permitida.\")\n    return a / b\ndef numero_a_string(numero: float) -> str:\n    \"\"\"\n    Formatea un número como cadena y lo normaliza usando una función del módulo 'strings'.\n    Ejemplo de uso de importación RELATIVA dentro del paquete.\n    \"\"\"",
+        "detail": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "numero_a_string",
+        "kind": 2,
+        "importPath": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "description": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "peekOfCode": "def numero_a_string(numero: float) -> str:\n    \"\"\"\n    Formatea un número como cadena y lo normaliza usando una función del módulo 'strings'.\n    Ejemplo de uso de importación RELATIVA dentro del paquete.\n    \"\"\"\n    raw_string = f\"El resultado es {numero:.2f}\"\n    return normalizar_string(raw_string)  # ¡Uso de la función importada!",
+        "detail": "Laboratorio 2.mi_paquete_mod_b.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "normalizar_string",
+        "kind": 2,
+        "importPath": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "description": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "peekOfCode": "def normalizar_string(s: str) -> str:\n    \"\"\"Normaliza una cadena (minúsculas, espacios consistentes).\"\"\"\n    return \" \".join(s.strip().lower().split())\ndef validar_email(email: str) -> bool:\n    \"\"\"Valida formato básico de email (contiene '@' y dominio con '.').\"\"\"\n    return \"@\" in email and \".\" in email.split(\"@\")[1]",
+        "detail": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "documentation": {}
+    },
+    {
+        "label": "validar_email",
+        "kind": 2,
+        "importPath": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "description": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "peekOfCode": "def validar_email(email: str) -> bool:\n    \"\"\"Valida formato básico de email (contiene '@' y dominio con '.').\"\"\"\n    return \"@\" in email and \".\" in email.split(\"@\")[1]",
+        "detail": "Laboratorio 2.mi_paquete_mod_b.strings",
+        "documentation": {}
+    },
+    {
+        "label": "saludar",
+        "kind": 2,
+        "importPath": "Laboratorio 2.modulo_c",
+        "description": "Laboratorio 2.modulo_c",
+        "peekOfCode": "def saludar(nombre: str) -> str:\n    return f\"Hola, {nombre}\"\nedad: int = 25\naltura: float = 1.75\nes_estudiante: bool = True\nfrom typing import List # proporciona soporte para type hints (sugerencias de tipo)\ndef obtener_nombres() -> List[str]:\n    return [\"Ana\", \"Luis\", \"Carlos\"]\nnumeros: List[int] = [1, 2, 3, 4, 5]\nfrom typing import Union",
+        "detail": "Laboratorio 2.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_nombres",
+        "kind": 2,
+        "importPath": "Laboratorio 2.modulo_c",
+        "description": "Laboratorio 2.modulo_c",
+        "peekOfCode": "def obtener_nombres() -> List[str]:\n    return [\"Ana\", \"Luis\", \"Carlos\"]\nnumeros: List[int] = [1, 2, 3, 4, 5]\nfrom typing import Union\ndef convertir_valor(valor: str) -> Union[int, float]:\n    if \".\" in valor:\n        return float(valor)\n    return int(valor)\nresultado: Union[int, str] = 42  # Puede ser int o str\nfrom typing import Optional",
+        "detail": "Laboratorio 2.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "convertir_valor",
+        "kind": 2,
+        "importPath": "Laboratorio 2.modulo_c",
+        "description": "Laboratorio 2.modulo_c",
+        "peekOfCode": "def convertir_valor(valor: str) -> Union[int, float]:\n    if \".\" in valor:\n        return float(valor)\n    return int(valor)\nresultado: Union[int, str] = 42  # Puede ser int o str\nfrom typing import Optional\ndef encontrar_usuario(id_usuario: int) -> Optional[str]:\n    if id_usuario == 1:\n        return \"Administrador\"\n    return None",
+        "detail": "Laboratorio 2.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "encontrar_usuario",
+        "kind": 2,
+        "importPath": "Laboratorio 2.modulo_c",
+        "description": "Laboratorio 2.modulo_c",
+        "peekOfCode": "def encontrar_usuario(id_usuario: int) -> Optional[str]:\n    if id_usuario == 1:\n        return \"Administrador\"\n    return None\nusuario: Optional[str] = encontrar_usuario(2)  # Puede ser str o None\nprint(\"##########################################\\n\")\nprint(\"=== Pruebas de las funciones ===\\n\")\n# Prueba de la función `saludar`\nprint(\"1. Función `saludar`: Saludamos a 'María'\")\nprint(saludar(\"María\")) ",
+        "detail": "Laboratorio 2.modulo_c",
+        "documentation": {}
+    },
+    {
+        "label": "normalizar_string",
+        "kind": 2,
+        "importPath": "Laboratorio 2.Utilidades_String",
+        "description": "Laboratorio 2.Utilidades_String",
+        "peekOfCode": "def normalizar_string(s: str) -> str:\n    \"\"\"\n    Normaliza una cadena:\n    - Elimina espacios al inicio/final.\n    - Convierte a minúsculas.\n    - Reemplaza múltiples espacios por uno solo.\n    Args:\n        s: Cadena de entrada.\n    Returns:\n        Cadena normalizada.",
+        "detail": "Laboratorio 2.Utilidades_String",
+        "documentation": {}
+    },
+    {
+        "label": "validar_email",
+        "kind": 2,
+        "importPath": "Laboratorio 2.Utilidades_String",
+        "description": "Laboratorio 2.Utilidades_String",
+        "peekOfCode": "def validar_email(email: str) -> bool:\n    \"\"\"\n    Valida si un email tiene formato básico:\n    - Contiene '@' y un dominio con '.' (ej: usuario@dominio.com).\n    Args:\n        email: Cadena a validar.\n    Returns:\n        True si es válido, False en caso contrario.\n    \"\"\"\n    if \"@\" not in email:",
+        "detail": "Laboratorio 2.Utilidades_String",
+        "documentation": {}
+    },
+    {
+        "label": "formato_telefono",
+        "kind": 2,
+        "importPath": "Laboratorio 2.Utilidades_String",
+        "description": "Laboratorio 2.Utilidades_String",
+        "peekOfCode": "def formato_telefono(telefono: str) -> str:\n    \"\"\"\n    Formatea un número de teléfono a estilo (365) 456-7890.\n    Args:\n        phone: Cadena con 10 dígitos numéricos.\n    Returns:\n        Cadena formateada.\n    Raises:\n        ValueError: Si la cadena no tiene 10 dígitos numéricos.\n    \"\"\"             # .isdigit() Verifica si una cadena contiene solo dígitos numéricos (0-9).",
+        "detail": "Laboratorio 2.Utilidades_String",
         "documentation": {}
     }
 ]
