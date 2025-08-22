@@ -21,8 +21,8 @@ Contiene ejercicios más avanzados, incluyendo la creación de paquetes.
 *   `modulo_a.py`: Contiene casos de prueba para el módulo `Utilidades_String`.
 *   `modulo_b.py`: (Paquetes) Ejemplifica el uso de importaciones absolutas y relativas de un paquete.
 *   `modulo_c.py`: Muestra el uso de "type hints" en Python.
-*   `Utilidades_String.py`: Provee funciones para normalizar, validar y formatear cadenas de texto para el `modulo_a.py`.
-*   `mi_paquete_mod_b/`: Paquete que contiene módulos para operaciones con cadenas de texto y números para el `modulo_b.py`.
+*   `Utilidades_String.py`: Funciones para normalizar, validar y formatear cadenas de texto para el `modulo_a.py`.
+*   `mi_paquete_mod_b/`: Paquete con módulos para operaciones con cadenas de texto y números para el `modulo_b.py`.
     *   `__init__.py`: Inicializa el paquete y reexporta funciones.
     *   `numbers.py`: Contiene funciones para operaciones numéricas.
     *   `strings.py`: Contiene funciones para manipulación de cadenas de texto.
