@@ -26,3 +26,8 @@ Contiene ejercicios más avanzados, incluyendo la creación de paquetes.
     *   `__init__.py`: Inicializa el paquete y reexporta funciones.
     *   `numbers.py`: Contiene funciones para operaciones numéricas.
     *   `strings.py`: Contiene funciones para manipulación de cadenas de texto.
+
+### Proyecto final
+
+Enlace Git del proyecto final(Pipeline COVID-19): https://github.com/TheBigG7/proyecto-final-JorgeBarreto.git
+   `nota: Informe en README.md`
